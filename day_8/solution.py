@@ -29,5 +29,5 @@ for layer in layers:
     temp_layer = [int(x) for x in list(layer)]
     final_layer = np.where(final_layer == 2, temp_layer, final_layer)
 
-x = np.reshape(final_layer, (25, 6)).T
+x = np.reshape(final_layer, (6, 25))
 print(x)
